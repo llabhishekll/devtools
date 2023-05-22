@@ -1,0 +1,30 @@
+# ------------------------ RUNTIME DEPENDENCY ----------------------- #
+
+--requirement requirements.txt
+
+# ---------------------- DEVELOPMENT DEPENDENCY --------------------- #
+
+# Build
+setuptools
+build
+twine
+
+# Testing
+pytest
+codecov
+pytest-cov
+
+# Linting/Tooling
+black
+isort
+mypy
+pre-commit
+ruff
+
+# Documentation
+mkdocs
+mkdocstrings
+mkdocstrings[python]
+mkdocs-material
+Pygments
+toc

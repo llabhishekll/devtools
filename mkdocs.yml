@@ -1,0 +1,62 @@
+# -------------------------- PROJECT DETAILS ------------------------ #
+
+# modify here (update project details)
+site_name: Devtools
+site_description: Your friendly command line tool.
+
+repo_name: llabhishekll/devtools
+repo_url: https://github.com/llabhishekll/devtools/
+
+site_author: llabhishekll
+site_url: https://llabhishekll.github.io/devtools
+
+# ------------------------- THEME DESCRIPTION ----------------------- #
+
+theme:
+    name: material
+    icon:
+        repo: fontawesome/brands/github
+    palette:
+        - media: "(prefers-color-scheme: light)"
+          primary: indigo
+          accent: grey
+          scheme: default
+          toggle:
+              icon: material/weather-sunny
+              name: Switch to dark mode
+        - media: "(prefers-color-scheme: dark)"
+          primary: indigo
+          accent: white
+          scheme: slate
+          toggle:
+              icon: material/weather-night
+              name: Switch to light mode
+    features:
+        - content.code.annotate
+        - content.code.copy
+        - navigation.indexes
+        - navigation.path
+        - navigation.top
+        - toc.integrate
+        - toc.follow
+
+plugins:
+    - search
+    - mkdocstrings
+
+markdown_extensions:
+    - pymdownx.highlight
+    - pymdownx.superfences
+
+extra:
+    generator: false
+
+# ------------------------- SITE NAVIGATION ------------------------- #
+
+# modify files (for `mkdocstrings` update `interface.md`)
+nav:
+    - "Overview": index.md
+    - "Installation": installation.md
+    - "Usage": usage.md
+    - "Interface": interface.md
+    - "About": about.md

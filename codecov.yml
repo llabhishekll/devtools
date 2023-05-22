@@ -1,0 +1,12 @@
+# -------------------------- CODE COVERAGE -------------------------- #
+# https://about.codecov.io/language/python/
+
+coverage:
+  precision: 0
+  round: nearest
+  range: 50...100
+
+ignore:
+  - "tests/*"
+  - "docs/*"
+  - "examples/*"
